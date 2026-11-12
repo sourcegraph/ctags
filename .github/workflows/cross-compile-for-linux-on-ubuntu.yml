@@ -41,7 +41,7 @@ jobs:
       - run: sudo apt -y update
       - run: sudo apt -y install gcc gcc-${{ matrix.target-arch }}-linux-gnu automake autoconf pkg-config cmake make qemu-user
 
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
 
       - run: curl -LO https://archive.ubuntu.com/ubuntu/pool/universe/m/musl/musl_1.2.6.orig.tar.gz
       - run: install -d src/musl/

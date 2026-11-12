@@ -17,7 +17,7 @@ jobs:
       CC: gcc
 
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
       with:
         fetch-depth: 0
 
@@ -43,7 +43,7 @@ jobs:
 
     - run: cd build.d && lcov -c -b . -d . -o coverage.info
 
-    - uses: codecov/codecov-action@v5
+    - uses: codecov/codecov-action@0fb7174895f61a3b6b78fc075e0cd60383518dac # v5.5.5
       with:
         files: build.d/coverage.info
         name: travis-ubuntu-latest

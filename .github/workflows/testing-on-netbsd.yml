@@ -16,9 +16,9 @@ jobs:
         netbsd-version: ['11.0', '10.1', '10.0']
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
 
-      - uses: cross-platform-actions/action@v1.6.0
+      - uses: cross-platform-actions/action@e0b9770014ba65d5e0815f15b74031c3a635f641 # v1.6.0
         with:
           operating_system: netbsd
           version: ${{ matrix.netbsd-version }}
